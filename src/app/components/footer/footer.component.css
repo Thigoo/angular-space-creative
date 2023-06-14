@@ -1,0 +1,35 @@
+.footer {
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+    background-color: #FFC7C7;
+    padding: 20px 10px;
+}
+
+span {
+    color: #3C2A21;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #3C2A21;
+}
+
+a {
+    color: #3C2A21;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+a:hover {
+    color: #5C3D2E;
+}
+
+i {
+    padding: 0px 10px;
+}

@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="product-detail col-lg-6" *ngIf="productData">            
+            <img src="{{productData[0].productImage}}" alt="" class="img" width="100%">
+            <h2>{{productData[0].productName}}</h2>
+            <p>{{productData[0].productDescribe}}</p>
+            <p class="price">{{productData[0].productPrice | currency:"USD"}}</p>
+        </div>
+        <div class="client-info col-lg-6 mt-4">
+            <h2 class="text-center mb-5">Client details</h2>
+            <form>
+                <input type="text" class="form-control mb-4" placeholder="Full name">
+                <input type="text" class="form-control mb-4" placeholder="Phone number">
+                <textarea class="form-control" placeholder="Write your address or local to delivery"></textarea>
+                <a class="btn btn-md btn-success mt-4 text-center">Place an order</a>
+            </form>
+            <a routerLink="../../menu" class="btn btn-md btn-warning mt-3 text-center">
+                <i class="bi bi-arrow-left"></i>
+                 Back</a>
+        </div>
+    </div>
+</div>

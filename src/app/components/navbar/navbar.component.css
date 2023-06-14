@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #FFC7C7;
+}
+
+img {
+    width: 70px;
+    margin-left: 1.5rem;
+}
+
+.active-link{
+    color: #3C2A21;
+    font-weight: bold;
+}

@@ -1,0 +1,16 @@
+<div class="container mt-5 mb-5">
+    <h2 class="text-center">Our products</h2>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let product of productData">
+            <div class="product-box mt-4">
+                <img src="{{product.productImage}}" alt="">
+                <h2>{{product.productName}}</h2>
+                <p>{{product.productDescribe}}</p>
+                <p class="price">{{product.productPrice | currency:"USD"}}</p>
+                <a (click)="scrollToTop()" [routerLink]="['/menu',product.id]" class="buy-link">Buy
+                    <i class="bi bi-bag"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

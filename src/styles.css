@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    scroll-behavior: auto !important;
+}
+
+body {
+    font-family: "Segoe UI";
+    height: 100vh;
+    background-color: #FDF4F5;
+}
+
+:root {
+    --active-color: #FFE0E0;
+}
+
+/* Scroll bar custom */
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #3C2A21;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #FFE0E0;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #3C2A21;  /* creates padding around scroll thumb */
+  }
